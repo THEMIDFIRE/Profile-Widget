@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$bg: #5451fa;
+$card-bg: #ffffff;
+$hover: #dcdafe;
+$color: #4a4a4a;
+$icon-hover: #979797;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bg;
+    color: $color;
+    font-size: 16px !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    max-width: 40%;
+    margin: auto;
+    .card {
+        background-color: $card-bg;
+        text-align: center;
+        border-radius: 20px;
+        padding: 20px;
+        .card-header {
+            justify-content: end;
+            color: $color;
+            .icon {
+                width: 70%;
+            }
+            .bell {
+                transition: .2s ease-in-out;
+                &:hover {
+                    color: $icon-hover;
+                }
+            }
+        }
+        .card-content {
+            .bg-img {
+                width: 100%;
+                border-radius: 15px;
+            }
+            .avatar {
+                width: 28%;
+                margin-top: -15%;
+            }
+            .about {
+                justify-content: center;
+                align-items: center;
+                .name {
+                    font-size: 1.45em;
+                    font-weight: 700;
+                }
+                .check {
+                    margin: 0 0 -9px -10px;
+                    svg {
+                        width: 42%;
+                        fill: $bg;
+                        stroke: white;
+                    }
+                }
+            }
+            .bio {
+                color: $icon-hover;
+                font-weight: 400;
+                margin: 10px auto 42px;
+            }
+            .stats {
+                min-width: 100%;
+                justify-content: space-around;
+                .info {
+                    h2 {
+                        color: black;
+                        font-weight: 600;
+                    }
+                    &:nth-child(2) {
+                        margin: 0 25px;
+                        h2 {
+                            color: $bg;
+                        }
+                    }
+                }
+            }
+            button {
+                color: white;
+                background-color: $bg;
+                min-width: 100%;
+                padding: 20px 0;
+                font-size: 18px;
+                border: none;
+                border-radius: 15px;
+                margin: 20px auto;
+                transition: .3s ease-in-out;
+                &:hover {
+                    background-color: $hover;
+                    color: $bg;
+                }
+            }
+            .status {
+                margin: 5px auto;
+                .info {
+                    margin: 13px auto;
+                    padding: 0 18px;
+                    .icon {
+                        margin-right: 5px
+                    }
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+.flex {
+    display: flex;
+}

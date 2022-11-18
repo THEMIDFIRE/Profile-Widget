@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #5451fa;
+  color: #4a4a4a;
+  font-size: 16px !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  max-width: 40%;
+  margin: auto;
+}
+
+.container .card {
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.container .card .card-header {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  color: #4a4a4a;
+}
+
+.container .card .card-header .icon {
+  width: 70%;
+}
+
+.container .card .card-header .bell {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.container .card .card-header .bell:hover {
+  color: #979797;
+}
+
+.container .card .card-content .bg-img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.container .card .card-content .avatar {
+  width: 28%;
+  margin-top: -15%;
+}
+
+.container .card .card-content .about {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .card-content .about .name {
+  font-size: 1.45em;
+  font-weight: 700;
+}
+
+.container .card .card-content .about .check {
+  margin: 0 0 -9px -10px;
+}
+
+.container .card .card-content .about .check svg {
+  width: 42%;
+  fill: #5451fa;
+  stroke: white;
+}
+
+.container .card .card-content .bio {
+  color: #979797;
+  font-weight: 400;
+  margin: 10px auto 42px;
+}
+
+.container .card .card-content .stats {
+  min-width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .card .card-content .stats .info h2 {
+  color: black;
+  font-weight: 600;
+}
+
+.container .card .card-content .stats .info:nth-child(2) {
+  margin: 0 25px;
+}
+
+.container .card .card-content .stats .info:nth-child(2) h2 {
+  color: #5451fa;
+}
+
+.container .card .card-content button {
+  color: white;
+  background-color: #5451fa;
+  min-width: 100%;
+  padding: 20px 0;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  margin: 20px auto;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.container .card .card-content button:hover {
+  background-color: #dcdafe;
+  color: #5451fa;
+}
+
+.container .card .card-content .status {
+  margin: 5px auto;
+}
+
+.container .card .card-content .status .info {
+  margin: 13px auto;
+  padding: 0 18px;
+}
+
+.container .card .card-content .status .info .icon {
+  margin-right: 5px;
+}
+
+.container .card .card-content .status .info span {
+  font-weight: 600;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
